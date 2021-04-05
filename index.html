@@ -12,14 +12,14 @@
 <body>
     <header class="header">
         <div class="header__top">
-            <nav class="header__menu">
-                <ul class="header__list">
-                    <li class="header__list-item"><a class="header__link" href="#">Home</a></li>
-                    <li class="header__list-item"><a class="header__link" href="#">Shop</a></li>
-                    <li class="header__list-item"><a class="header__link" href="#">Story</a></li>
-                    <li class="header__list-item"><a class="header__link" href="#">About</a></li>
-                    <li class="header__list-item"><a class="header__link" href="#">Blog</a></li>
-                    <li class="header__list-item"><a class="header__link" href="#">Testimonials</a></li>
+            <nav class="header__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__list-item"><a class="nav__list-link" href="#">Home</a></li>
+                    <li class="nav__list-item"><a class="nav__list-link" href="#">Shop</a></li>
+                    <li class="nav__list-item"><a class="nav__list-link" href="#">Story</a></li>
+                    <li class="nav__list-item"><a class="nav__list-link" href="#">About</a></li>
+                    <li class="nav__list-item"><a class="nav__list-link" href="#">Blog</a></li>
+                    <li class="nav__list-item"><a class="nav__list-link" href="#">Testimonials</a></li>
                 </ul>
             </nav>
             <div class="header__logo logo">
@@ -28,38 +28,38 @@
             <div class="header__personal personal">
                 <ul class="personal__list">
                     <li class="personal__list-item">
-                        <a class="personal__link" href="#">
-                            <img class="personal__icon-search" src="#" alt="#"></a>
+                        <a class="personal__list-link" href="#">
+                            <img class="personal__list-img" src="#" alt="#"></a>
                     </li>
                     <li class="personal__list-item">
-                        <a class="personal__link" href="#">
-                            <img class="personal__icon-user" src="#" alt="#"></a>
+                        <a class="personal__list-link" href="#">
+                            <img class="personal__list-img" src="#" alt="#"></a>
                     </li>
                     <li class="personal__list-item">
-                        <a class="personal__link-cart" href="#">
-                            <img class="personal__cart-icon" src="#" alt="#"></a>
-                        <span class="personal__cart-count">3</span>
+                        <a class="personal__list-link" href="#">
+                            <img class="personal__list-img" src="#" alt="#"></a>
+                        <span class="personal__count">3</span>
                     </li>
                 </ul>
             </div>
             <div class="header__social social">
                 <ul class="social__list">
                     <li class="social__list-item">
-                        <a class="social__link" href="#">
-                            <img class="social__icon" src="#" alt="#"></a>
+                        <a class="social__list-link" href="#">
+                            <img class="social__list-img" src="#" alt="#"></a>
                     </li>
                     <li class="social__list-item">
-                        <a href="#">
-                            <img class="social__icon" src="#" alt="#"></a>
+                        <a class="social__list-link" href="#">
+                            <img class="social__list-img" src="#" alt="#"></a>
                     </li>
                     <li class="social__list-item">
-                        <a href="#">
-                            <img class="social__icon" src="#" alt="#"></a>
+                        <a class="social__list-link" href="#">
+                            <img class="social__list-img" src="#" alt="#"></a>
                     </li>
                 </ul>
             </div>
         </div>
-        <button class="header__btn btn btn--green-bg">Shop now</button>
+        <button class="header__btn btn btn--green">Shop now</button>
         <h1 class="header__slogan">SLOGAN</h1>
     </header>
 
@@ -124,44 +124,48 @@
         <button class="about__btn btn btn--yellow-br">About Organic Smoothie</button>
     </section>
 
-
     <section class="products">
-        <div class="products__item">
-            <img class="products__img" src="#" alt="#">
-            <h3 class="products__title">Dark Chocolate Smoothie</h3>
-            <span class="products__subtitle">100ml</span>
-            <button class="products__btn btn">Buy</button>
-        </div>
-        <div class="products__item">
-            <img class="products__img" src="#" alt="#">
-            <h3 class="products__title">Vegan Lettuce Smoothie</h3>
-            <span class="products__subtitle">100ml</span>
-            <button class="products__btn btn">Buy</button>
-        </div>
-        <div class="products__item">
-            <img class="products__img" src="#" alt="#">
-            <h3 class="products__title">Lemon Ginger Smoothie</h3>
-            <span class="products__subtitle">100ml</span>
-            <button class="products__btn btn">Buy</button>
-        </div>
-        <div class="products__item">
-            <img class="products__img" src="#" alt="#">
-            <h3 class="products__title">Turmeric Garlic Smoothie</h3>
-            <span class="products__subtitle">100ml</span>
-            <button class="products__btn btn">Buy</button>
-        </div>
+            <div class="products__item product product--chocolate">
+                <img class="products__img" src="#" alt="#">
+                <h3 class="products__title">Dark Chocolate Smoothie</h3>
+                <span class="products__subtitle">100ml</span>
+                <button class="products__btn btn btn--white">Buy</button>
+            </div>
+            <div class="products__item products__item--vegan">
+                <img class="products__img " src="#" alt="#">
+                <h3 class="products__title">Vegan Lettuce Smoothie</h3>
+                <span class="products__subtitle">100ml</span>
+                <button class="products__btn btn btn--white">Buy</button>
+            </div>
+            <div class="products__item products__item--lemon">
+                <img class="products__img" src="#" alt="#">
+                <h3 class="products__title">Lemon Ginger Smoothie</h3>
+                <span class="products__subtitle">100ml</span>
+                <button class="products__btn btn btn--white">Buy</button>
+            </div>
+            <div class="products__item products__item--turmeric">
+                <img class="products__img" src="#" alt="#">
+                <h3 class="products__title">Turmeric Garlic Smoothie</h3>
+                <span class="products__subtitle">100ml</span>
+                <button class="products__btn btn btn--white">Buy</button>
+            </div>
     </section>
 
+
     <section class="story">
-        <div class="story__wrapper">
-            <h2 class="story__title title">Our story</h2>
-            <p class="story__text text">As products typically using raw fruits or vegetables, smoothies include dietary
-                fiber (e.g. pulp, skin,
-                and seeds) and so are thicker than fruit juice, often with a consistency similar to a milkshake.</p>
-            <button class="story__btn btn">Who we are</button>
-        </div>
-        <div class="story__img-wrapper">
-            <img class="story__img" src="#" alt="#">
+        <div class="container">
+            <div class="story__inner">
+                <div class="story__wrapper">
+                    <h2 class="story__title title title--yellow">Our story</h2>
+                    <p class="story__text text">As products typically using raw fruits or vegetables, smoothies include dietary
+                        fiber (e.g. pulp, skin,
+                        and seeds) and so are thicker than fruit juice, often with a consistency similar to a milkshake.</p>
+                    <button class="story__btn btn btn--green">Who we are</button>
+                </div>
+                <div class="story__img-wrapper">
+                    <img class="story__img" src="#" alt="#">
+                </div>
+            </div>
         </div>
     </section>
 
