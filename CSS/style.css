@@ -1,4 +1,30 @@
+@font-face{
+    font-family: 'MultiBold';
+    src: url('/assets/fonts/Muli-Bold.ttf');
+}
+@font-face{
+    font-family: 'MultiBoldItalic';
+    src: url('/assets/fonts/Muli-BoldItalic.ttf');
+}
+@font-face{
+    font-family: 'MultiExtraBold';
+    src: url('/assets/fonts/Muli-ExtraBold.woff');
+}
+@font-face{
+    font-family: 'MultiItalic';
+    src: url('/assets/fonts/Muli-Italic.ttf');
+}
+@font-face{
+    font-family: 'MultiRegular';
+    src: url('/assets/fonts/Muli-Regular.woff');
+}
+@font-face{
+    font-family: 'MultiSemiBoldItalic';
+    src: url('/assets/fonts/Muli-Semi-BoldItalic.ttf');
+}
+
 html, body {
+    font-family: 'MultiRegular';
     box-sizing: border-box;
 }
 
