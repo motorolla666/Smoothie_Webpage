@@ -137,9 +137,6 @@ body {
     font-size: 24px;
     border-style: none;
     padding: 25px 125px 20px 40px;
-}
-
-.btn--green {
     background-color: #0aa566;
     color: white;
 }
@@ -183,10 +180,12 @@ body {
     max-width: 915px;
 }
 
+
+/* help!!! */
 .smoothies__list {
     display: flex;
     flex-direction: column;
-
+    /* max-width: 915px; */
 }
 
 .smoothies__container-top {
@@ -201,6 +200,100 @@ body {
     margin-bottom: 165px;
 }
 
+
+
 .smoothies__list-inner:not(:last-child) {
     margin-right: 198px;
+}
+
+.smoothies__list-desc {
+    font-size: 25px;
+    font-weight: 800;
+    color: #f2612d;
+    margin-top: 30px;
+}
+
+/* about */
+
+.about {
+    display: flex;
+    min-height: 100vh;
+    background-color: #14826f;
+}
+
+.about__title {
+    font-size: 55px;
+}
+
+.about__title--yellow {
+    color: #cae941;
+}
+
+.about__container {
+    flex-direction: column;
+    margin-top: 100px;
+    margin-left: 145px;
+}
+
+/* help!!! */
+.about__img {
+    margin-top: 65px;
+    margin-left: 145px;
+}
+
+.about__list {
+    margin-top: 45px;
+    margin-left: 20px;
+}
+
+.about__list-item {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.95;
+    color: #ffffff;
+    list-style-image: url(/smoothie-project/assets/images/about/point-about.png);
+    padding-left: 10px;
+}
+
+.about__text--bold {
+    font-weight: 800;
+}
+
+.about__btn {
+    border-radius: 30px;
+    border: solid 2px #f8b231;
+    background-color: #14826f;
+    color: #ffffff;
+    padding: 21px 98px 18px 29px;
+    margin-top: 50px;
+    font-weight: 800;
+    font-size: 21px;
+}
+
+/* products */
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    min-height: 100vh;
+}
+
+.products__item--chocolate {
+    background-color: #632b17;
+}
+
+.products__item--vegan {
+    background-color: #178670;
+}
+
+.products__item--lemon {
+    background-color: #f7ae3b;
+}
+
+.products__item--turmeric {
+    background-color: #c3471b;
+}
+
+.products__item {
+    flex-grow: 1;
 }
