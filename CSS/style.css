@@ -180,30 +180,16 @@ body {
     max-width: 915px;
 }
 
-
-/* help!!! */
 .smoothies__list {
     display: flex;
     flex-direction: column;
-    /* max-width: 915px; */
-}
-
-.smoothies__container-top {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 70px;
-}
-
-.smoothies__container-bottom {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 165px;
 }
 
 
+/* help!!!! */
 
-.smoothies__list-inner:not(:last-child) {
-    margin-right: 198px;
+.smoothies__list-inner{
+    flex-basis: 25%;
 }
 
 .smoothies__list-desc {
@@ -217,8 +203,8 @@ body {
 
 .about {
     display: flex;
-    min-height: 100vh;
     background-color: #14826f;
+    padding-left: 20px;
 }
 
 .about__title {
@@ -235,10 +221,9 @@ body {
     margin-left: 145px;
 }
 
-/* help!!! */
+/* help!!! bottom */
 .about__img {
-    margin-top: 65px;
-    margin-left: 145px;
+    transform: translateY(80px);
 }
 
 .about__list {
@@ -275,7 +260,8 @@ body {
 .products {
     display: flex;
     justify-content: space-around;
-    min-height: 100vh;
+    min-height: 720px;
+    text-align: center;
 }
 
 .products__item--chocolate {
@@ -296,4 +282,91 @@ body {
 
 .products__item {
     flex-grow: 1;
+    padding-top: 130px;
+}
+
+.products__title {
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 24px;
+    margin-top: 35px;
+}
+
+/* help!!! br */
+.products__subtitle {
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* help!!! br */
+.products__btn {
+    border-radius: 30px;
+    border: solid 2px #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 22px 130px 18px 36px;
+    margin-top: 65px;
+}
+
+/* story */
+
+/* help!!! why container? */
+.story__inner {
+    display: flex;
+    font-display: row;
+    justify-content: center;
+}
+
+.story__text {
+    max-width: 500px;
+    margin: 45px 0 60px 0;
+}
+
+.story__title {
+    margin-top: 260px;
+}
+
+.story__img {
+    margin: 120px 0 160px 205px;
+}
+
+.story__btn {
+    padding: 21px 147px 23px 30px;
+    border-radius: 30px;
+    background-color: #0aa566;
+    border-style: none;
+    font-size: 21px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+/* testimonials */
+
+.testimonials{
+    min-height: 720px;
+    background-image: url(/smoothie-project/assets/images/testimonials/bg-testimonials.png);
+}
+
+.testimonials__title{
+    text-align: center;
+    padding-top: 120px;
+}
+
+.testimonials__text{
+    width: 455px;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+}
+
+.testimonials__text--orange{
+    color: #f7ae3b;
+}
+
+.testimonials__wrapper{
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
 }
