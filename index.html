@@ -148,26 +148,26 @@
     <section class="products">
         <div class="products__item products__item--chocolate">
             <img class="products__img" src="assets/images/products/dark-products.png" alt="dark-products">
-            <h3 class="products__title">Dark Chocolate Smoothie</h3><br>
-            <span class="products__subtitle">100ml</span><br>
+            <h3 class="products__title">Dark Chocolate Smoothie</h3>
+            <span class="products__subtitle">100ml</span>
             <button class="products__btn btn--white-br">Buy</button>
         </div>
         <div class="products__item products__item--vegan">
             <img class="products__img " src="assets/images/products/vegan-products.png" alt="vegan-products">
-            <h3 class="products__title">Vegan Lettuce Smoothie</h3><br>
-            <span class="products__subtitle">100ml</span><br>
+            <h3 class="products__title">Vegan Lettuce Smoothie</h3>
+            <span class="products__subtitle">100ml</span>
             <button class="products__btn btn--white-br">Buy</button>
         </div>
         <div class="products__item products__item--lemon">
             <img class="products__img" src="assets/images/products/lemon-products.png" alt="lemon-products">
-            <h3 class="products__title">Lemon Ginger Smoothie</h3><br>
-            <span class="products__subtitle">100ml</span><br>
+            <h3 class="products__title">Lemon Ginger Smoothie</h3>
+            <span class="products__subtitle">100ml</span>
             <button class="products__btn btn--white-br">Buy</button>
         </div>
         <div class="products__item products__item--turmeric">
             <img class="products__img" src="assets/images/products/turmeric-products.png" alt="turmeric-products">
-            <h3 class="products__title">Turmeric Garlic Smoothie</h3><br>
-            <span class="products__subtitle">100ml</span><br>
+            <h3 class="products__title">Turmeric Garlic Smoothie</h3>
+            <span class="products__subtitle">100ml</span>
             <button class="products__btn btn--white-br">Buy</button>
         </div>
     </section>
@@ -196,41 +196,49 @@
     <section class="testimonials">
         <h2 class="testimonials__title title">Why clients <span class="testimonials__title--orange">love </span>us?</h2>
         <div class="testimonials__wrapper">
-            <q class="testimonials__text text">Smoothie is great. I don't know what else to say. I will let my mum know
-                about this, she could
-                really make use of Smoothie! Smoothie saved my business.</q>
-            <cite class="testimonials__text testimonials__text--orange">- from Santa Monica, CA</cite>
+            <div class="testomonials__container">
+                <q class="testimonials__text text">Smoothie is great. I don't know what else to say. I will let my mum
+                    know
+                    about this, she could
+                    really make use of Smoothie! Smoothie saved my business.</q>
+                <cite class="testimonials__text--orange">- from Santa Monica, CA</cite>
+            </div>
             <img class="testimonials__img" src="assets/images/testimonials/icon-testimonials.png"
                 alt="icon-testimonials">
-            <div class="testimonials__slider">
-                <img class="testimonials__arrow"
-                    src="/smoothie-project/assets/images/testimonials/arrow-testimonials.png" alt="arrow-testimonials">
-                <img class="testimonials__arrow--right"
-                    src="/smoothie-project/assets/images/testimonials/arrow-testimonials.png" alt="arrow-testimonials">
-            </div>
+        </div>
+        <div class="testimonials__slider">
+            <img class="testimonials__arrow" src="/smoothie-project/assets/images/testimonials/arrow-testimonials.png"
+                alt="arrow-testimonials">
+            <img class="testimonials__arrow--right"
+                src="/smoothie-project/assets/images/testimonials/arrow-testimonials.png" alt="arrow-testimonials">
         </div>
     </section>
 
 
     <section class="blog">
-        <div class="blog__wrapper">
-            <h2 class="blog__title title">Our blog</h2>
-            <img class="blog__img" src="assets/images/blog/main-blog.png" alt="main-blog">
+        <div class="blog__container">
+            <div class="blog__wrapper">
+                <h2 class="blog__title title">Our blog</h2>
+                <img class="blog__img" src="assets/images/blog/main-blog.png" alt="main-blog">
+            </div>
+            <article class="blog__wrapper">
+                <h3 class="blog__title blog__title--red">ASAFOETIDA - THE NEXT TURMERIC?</h3>
+                <time class="blog__date" datetime="2020-06-16">Jun 16, 2020</time>
+                <p class="blog__text text">If the fruit ingredients and the green vegetable ingredients are both juiced
+                    ahead of time, the mixed
+                    juice doesn't even have to be blended like a smoothie, i.e. a green juice or anything...
+                    <a class="blog__link" href="#">Read More</a>
+                </p>
+            </article>
         </div>
-        <article class="blog__wrapper">
-            <h3 class="blog__title blog__title--red">ASAFOETIDA - THE NEXT TURMERIC?</h3>
-            <time class="blog__date" datetime="2020-06-16">Jun 16, 2020</time>
-            <p class="blog__text text">If the fruit ingredients and the green vegetable ingredients are both juiced
-                ahead of time, the mixed
-                juice doesn't even have to be blended like a smoothie, i.e. a green juice or anything...
-                <a class="blog__link" href="#">Read More</a>
-            </p>
-        </article>
     </section>
 
 
     <section class="instagram">
-        <h3 class="instagram__text">ashasuperfoods</h3>
+        <div class="instagram__top">
+            <img class="instagram__icon" src="assets/images/instagram/icon-green-instagram.png" alt="">
+            <h3 class="instagram__text">ashasuperfoods</h3>
+        </div>
         <div class="instagram__content">
             <div class="instagram__item">
                 <img class="instagram__item-img" src="assets/images/instagram/1-instagram.png" alt="instagram">
@@ -252,46 +260,48 @@
 
 
     <footer class="footer">
-        <div class="footer__logo logo">
-            <a class="logo__link" href="#"><img class="logo__img" src="assets/images/header/logo-header.png"
-                    alt="logo"></a>
-        </div>
-        <div class="footer__information">
-            <h3 class="footer__title">Information</h3>
-            <ul class="footer__list">
-                <li class="footer__list-item" href="#"><a class="footer__list-link" href="#">Search</a></li>
-                <li class="footer__list-item" href="#"><a class="footer__list-link" href="#">Contact us</a></li>
-                <li class="footer__list-item" href="#"><a class="footer__list-link" href="#">Terms & Conditions</a></li>
-                <li class="footer__list-item" href="#"><a class="footer__list-link" href="#">Privacy Policy</a></li>
-            </ul>
-        </div>
-        <div class="footer__payment">
-            <h3 class="footer__title">Payment</h3>
-            <div class="footer__payment-wrapper">
-                <img class="footer__link-img" src="assets/images/footer/amex-footer.png" alt="amex-footer">
-                <img class="footer__link-img" src="assets/images/footer/apple-pay-footer.png" alt="apple-pay-footer">
-                <img class="footer__link-img" src="assets/images/footer/maestro-footer.png" alt="maestro-footer">
-                <img class="footer__link-img" src="assets/images/footer/discover-footer.png" alt="#">
-                <img class="footer__link-img" src="assets/images/footer/jcb-footer.png" alt="jcb-footer">
-                <img class="footer__link-img" src="assets/images/footer/mastercard-footer.png" alt="mastercard-footer">
-                <img class="footer__link-img" src="assets/images/footer/paypal-footer.png" alt="paypal-footer">
-                <img class="footer__link-img" src="assets/images/footer/shopify-pay-footer.png"
-                    alt="shopify-pay-footer">
-                <img class="footer__link-img" src="assets/images/footer/visa-footer.png" alt="visa-footer">
+        <div class="footer__up">
+            <div class="footer__logo logo">
+                <a class="logo__link" href="#"><img class="logo__img" src="assets/images/header/logo-header.png"
+                        alt="logo"></a>
             </div>
-        </div>
-        <div class="footer__subscribe">
-            <h3 class="footer__title">Don’t miss out!</h3>
-            <input class="footer__mail" type="email" placeholder="Subscribe to our newsletter">
-            <div class="footer__follow-wrapper">
-                <span class="footer__text">FOLLOW US</span>
-                <div class="footer__social social">
-                    <a class="footer__link-social" href="#"><img class="footer__img-social"
-                            src="assets/images/footer/facebook-footer.png" alt="facebook-footer"></a>
-                    <a class="footer__link-social" href="#"><img class="footer__img-social"
-                            src="assets/images/footer/pinterest-footer.png" alt="pinterest-footer"></a>
-                    <a class="footer__link-social" href="#"><img class="footer__img-social"
-                            src="assets/images/footer/instagram-footer.png" alt="instagram-footer"></a>
+            <div class="footer__information">
+                <h3 class="footer__title">Information</h3>
+                <ul class="footer__list">
+                    <li class="footer__list-item" href="#"><a class="footer__list-link" href="#">Search</a></li>
+                    <li class="footer__list-item" href="#"><a class="footer__list-link" href="#">Contact us</a></li>
+                    <li class="footer__list-item" href="#"><a class="footer__list-link" href="#">Terms & Conditions</a></li>
+                    <li class="footer__list-item" href="#"><a class="footer__list-link" href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer__payment">
+                <h3 class="footer__title">Payment</h3>
+                <div class="footer__payment-wrapper">
+                    <img class="footer__link-img" src="assets/images/footer/amex-footer.png" alt="amex-footer">
+                    <img class="footer__link-img" src="assets/images/footer/apple-pay-footer.png" alt="apple-pay-footer">
+                    <img class="footer__link-img" src="assets/images/footer/maestro-footer.png" alt="maestro-footer">
+                    <img class="footer__link-img" src="assets/images/footer/discover-footer.png" alt="#">
+                    <img class="footer__link-img" src="assets/images/footer/jcb-footer.png" alt="jcb-footer">
+                    <img class="footer__link-img" src="assets/images/footer/mastercard-footer.png" alt="mastercard-footer">
+                    <img class="footer__link-img" src="assets/images/footer/paypal-footer.png" alt="paypal-footer">
+                    <img class="footer__link-img" src="assets/images/footer/shopify-pay-footer.png"
+                        alt="shopify-pay-footer">
+                    <img class="footer__link-img" src="assets/images/footer/visa-footer.png" alt="visa-footer">
+                </div>
+            </div>
+            <div class="footer__subscribe">
+                <h3 class="footer__title">Don’t miss out!</h3>
+                <input class="footer__mail" type="email" placeholder="Subscribe to our newsletter">
+                <div class="footer__follow-wrapper">
+                    <span class="footer__text">FOLLOW US</span>
+                    <div class="footer__social social">
+                        <a class="footer__link-social" href="#"><img class="footer__img-social"
+                                src="assets/images/footer/facebook-footer.png" alt="facebook-footer"></a>
+                        <a class="footer__link-social" href="#"><img class="footer__img-social"
+                                src="assets/images/footer/pinterest-footer.png" alt="pinterest-footer"></a>
+                        <a class="footer__link-social" href="#"><img class="footer__img-social"
+                                src="assets/images/footer/instagram-footer.png" alt="instagram-footer"></a>
+                    </div>
                 </div>
             </div>
         </div>
