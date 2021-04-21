@@ -85,9 +85,20 @@ html, body {
     width: 450px;
 }
 
+/* HELP!!!!!!!!!!!!! align-center */
 .personal__list {
     list-style-type: none;
     display: flex;
+}
+
+.personal__list::after {
+    content: "";
+    width: 47px;
+    height: 2px;
+    background-color: #ffd68f;
+    position: absolute;
+    top: 100px;
+    right: 280px;
 }
 
 .personal__list-item:not(:first-child) {
@@ -101,6 +112,7 @@ html, body {
     border-radius: 50%;
     text-align: center;
     position: absolute;
+    top: 80px;
 }
 
 .social__list {
@@ -133,6 +145,12 @@ html, body {
     padding: 25px 125px 20px 40px;
     background-color: #0aa566;
     color: white;
+}
+
+.header__btn::after{
+    content:url(/smoothie-project/assets/images/header/arrow-header.png);
+    position: relative;
+    left: 55px;
 }
 
 .header__slogan {
@@ -213,10 +231,18 @@ html, body {
 
 .about__title {
     font-size: 55px;
+    position: relative;
 }
 
 .about__title--yellow {
     color: #cae941;
+}
+
+.about__title--yellow::after{
+    content:url(/smoothie-project/assets/images/about/line-underline.png);
+    position: absolute;
+    top: 70%;
+    left: 13%;
 }
 
 .about__container {
@@ -256,6 +282,12 @@ html, body {
     margin-top: 50px;
     font-weight: 800;
     font-size: 21px;
+}
+
+.about__btn::after{
+    content:url(/smoothie-project/assets/images/header/arrow-header.png);
+    position: relative;
+    left: 55px;
 }
 
 /* products */
@@ -316,6 +348,12 @@ html, body {
     margin-top: 65px;
 }
 
+.products__btn::after{
+    content:url(/smoothie-project/assets/images/products/arrow-products.png);
+    position: relative;
+    left: 85px;
+}
+
 /* story */
 
 .story__inner {
@@ -347,6 +385,11 @@ html, body {
     color: #ffffff;
 }
 
+.story__btn::after{
+    content:url(/smoothie-project/assets/images/header/arrow-header.png);
+    position: relative;
+    left: 100px;
+}
 /* testimonials */
 
 .testimonials {
@@ -378,7 +421,7 @@ html, body {
 }
 
 .testimonials__wrapper {
-    margin-top: 120px;
+    padding-top: 120px;
     max-width: 735px;
     display: flex;
     align-items: center;
@@ -540,11 +583,27 @@ html, body {
     transform: translateX(20px);
 }
 
+.footer__follow-wrapper::before{
+    content:url(/smoothie-project/assets/images/footer/arrow-footer.png);
+    position: relative;
+    bottom:10px;
+    right: 15px;
+}
+
 .footer__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 18px;
     font-weight: 800;
     color: #6d450c;
-    margin-right: 45px;
+    margin-right: 40px;
+}
+
+.footer__social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer__link-social:not(:last-child) {
@@ -557,11 +616,39 @@ html, body {
     background-color: #6c2c1c;
 }
 
+/* HELP!!!!!!! Center */
 .footer-down__copyright {
     display: flex;
     align-items: center;
     margin: 0 auto;
+    left: 50%;
     font-size: 13px;
     color: #af8a82;
     font-weight: 400;
+}
+
+.footer-down__link {
+    text-decoration: none;
+    display: flex;
+}
+
+.footer-down__link::after {
+    content: url(/smoothie-project/assets/images/footer/arrow-up-footer.png);
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #f2662f;
+    position: fixed;
+    bottom: 3%;
+    left: 93%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.footer-down__text {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 25px 165px 20px 0;
 }
