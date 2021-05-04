@@ -718,10 +718,10 @@ html, body {
         right: 60px;
         top: 20px;
         z-index: 2;
-        display: none;
+        /* display: none; */
     }
     .header__list {
-        display: none;
+        /* display: none; */
         background-color: #0aa566;
         position: fixed;
         top: 0;
@@ -802,69 +802,223 @@ html, body {
         flex-direction: column;
         align-items: center;
     }
-    .story__title{
+    .story__title {
         margin-top: 30px;
     }
-    .story__img{
+    .story__img {
         height: 100%;
         width: 100%;
-        margin:90px auto;
+        margin: 90px auto;
         object-fit: cover;
     }
     /* testimonials */
-    .testimonials__img{
+    .testimonials__img {
         margin: 30px;
         height: 30%;
         width: 30%;
         object-fit: cover;
     }
-    .testimonials__text{
+    .testimonials__text {
         margin: 30px;
     }
     /* blog */
-    .blog__container{
+    .blog__container {
         flex-direction: column;
     }
-    .blog__title{
+    .blog__title {
         text-align: center;
         margin: 40px;
     }
-    .blog__img{
+    .blog__img {
         margin: 10px auto;
         height: 100%;
         width: 100%;
         object-fit: cover;
     }
-    .blog__text{
+    .blog__text {
         margin-bottom: 30px;
     }
     /* instagram */
-    .instagram__top{
+    .instagram__top {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .instagram__text{
+    .instagram__text {
         margin-left: 10px;
     }
     /* footer */
-    .footer__logo{
+    .footer__logo {
         display: none;
     }
-    .footer__mail{
+    .footer__mail {
         padding: 0;
         width: 200px;
         height: 30px;
     }
-    .footer__link-social:not(:last-child){
+    .footer__link-social:not(:last-child) {
         margin: 10px;
     }
-    .footer__img-social{
+    .footer__img-social {
         height: 70%;
         width: 70%;
         object-fit: cover;
     }
-    .footer__text{
+    .footer__text {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width:320px) {
+    html {
+        font-size: 0.4rem;
+    }
+    /* header */
+    .header__burger-btn {
+        width: 30px;
+        right: 30px;
+        top: 10px;
+        /* display: none; */
+    }
+    .personal__list-item:not(:first-child) {
+        margin-left: 15px;
+    }
+    .personal__list-img {
+        width: 15px;
+    }
+    .social__list-item {
+        width: 20px;
+        height: 20px;
+    }
+    /* КАК РАСПОЛОЖИТЬ СПРАВА */
+    .social__list {
+        display: flex;
+        justify-content: end;
+    }
+    .social__list-img {
+        width: 7px;
+    }
+    .personal__count {
+        width: 10px;
+        height: 10px;
+        left: 12px;
+    }
+    /* smoothies */
+    .smoothies {
+        height: 100%;
+    }
+    .smoothies__text {
+        margin: 50px;
+    }
+    .smoothies__list {
+        min-height: 100%;
+    }
+    /* about */
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+    .about__img {
+        width: 300px;
+        margin: 0 auto;
+    }
+    .about__title--yellow::after {
+        content: '';
+        height: 20%;
+        width: 120%;
+        object-fit: cover;
+        top: 45px;
+        left: -80px;
+    }
+    .about__btn {
+        margin: 50px;
+    }
+    /* products */
+    .products {
+        min-height: auto;
+    }
+    .products__title {
+        margin-right: 10px;
+    }
+    .products__img {
+        height: 200px;
+    }
+    .products__btn {
+        padding: 30px;
+        margin-bottom: 30px;
+    }
+    .products__btn::after {
+        display: none;
+    }
+    /* story */
+    .story__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .story__title {
+        margin-top: 30px;
+    }
+    .story__img {
+        height: 100%;
+        width: 100%;
+        margin: 90px auto;
+        object-fit: cover;
+    }
+    /* testimonials */
+    .testimonials__img {
+        margin: 30px;
+        height: 30%;
+        width: 30%;
+        object-fit: cover;
+    }
+    .testimonials__text {
+        margin: 30px;
+    }
+    /* blog */
+    .blog__container {
+        flex-direction: column;
+    }
+    .blog__title {
+        text-align: center;
+        margin: 40px;
+    }
+    .blog__img {
+        margin: 10px auto;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .blog__text {
+        margin-bottom: 30px;
+    }
+    /* instagram */
+    .instagram__top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .instagram__text {
+        margin-left: 10px;
+    }
+    /* footer */
+    .footer__logo {
+        display: none;
+    }
+    .footer__mail {
+        padding: 0;
+        width: 200px;
+        height: 30px;
+    }
+    .footer__link-social:not(:last-child) {
+        margin: 10px;
+    }
+    .footer__img-social {
+        height: 70%;
+        width: 70%;
+        object-fit: cover;
+    }
+    .footer__text {
         margin-right: 0;
     }
 }
