@@ -718,10 +718,10 @@ html, body {
         right: 60px;
         top: 20px;
         z-index: 2;
-        /* display: none; */
+        display: none;
     }
     .header__list {
-        /* display: none; */
+        display: none;
         background-color: #0aa566;
         position: fixed;
         top: 0;
@@ -880,20 +880,26 @@ html, body {
         top: 10px;
         /* display: none; */
     }
+    .personal__list {
+        position: absolute;
+        right: 70px;
+    }
     .personal__list-item:not(:first-child) {
         margin-left: 15px;
     }
     .personal__list-img {
         width: 15px;
     }
+    .personal__list:after {
+        left: 40px;
+    }
     .social__list-item {
         width: 20px;
         height: 20px;
     }
-    /* КАК РАСПОЛОЖИТЬ СПРАВА */
     .social__list {
-        display: flex;
-        justify-content: end;
+        position: absolute;
+        left: 110px;
     }
     .social__list-img {
         width: 7px;
@@ -914,26 +920,31 @@ html, body {
         min-height: 100%;
     }
     /* about */
-    .about {
-        display: flex;
-        flex-direction: column;
-    }
     .about__img {
-        width: 300px;
-        margin: 0 auto;
+        width: 200px;
+    }
+    .about__title {
+        font-size: 3rem;
+        text-align: center;
+    }
+    .about__container {
+        margin: 90px auto;
+    }
+    .about__list-item {
+        margin-right: 10px;
     }
     .about__title--yellow::after {
-        content: '';
-        height: 20%;
-        width: 120%;
-        object-fit: cover;
-        top: 45px;
-        left: -80px;
+        display: none;
     }
     .about__btn {
-        margin: 50px;
+        margin: 30px; 
+        padding: 9px 63px 13px 7px;
     }
-    /* products */
+    .about__btn::after{
+        left: 60px;
+        top: -3px;
+    }
+    /* products */!!!!!!!!!!!!!!!!!!!!
     .products {
         min-height: auto;
     }
